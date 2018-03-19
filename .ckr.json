@@ -1,0 +1,10 @@
+{
+  "data_uoa": "ck-request-asplos18-results-iot-farm",
+  "data_uid": "ab816740663debac",
+  "data_alias": "ck-request-asplos18-results-iot-farm",
+  "data_name": "ck-request-asplos18-results-iot-farm",
+  "dict": {
+    "shared": "git",
+    "url": "https://github.com/ctuning/ck-request-asplos18-results-iot-farm"
+  }
+}
