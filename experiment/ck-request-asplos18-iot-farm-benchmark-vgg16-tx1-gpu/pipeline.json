@@ -1,0 +1,515 @@
+{
+  "cmd_key": "benchmark-vgg16-single-device-gpu", 
+  "tmp_dir": "", 
+  "features": {
+    "compiler_version": {
+      "raw": "", 
+      "list": [], 
+      "str": ""
+    }
+  }, 
+  "characteristics": {}, 
+  "choices": {
+    "cpu_freq": "max", 
+    "no_state_check": "yes", 
+    "target": "", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "energy": "no", 
+    "flags": "-O3", 
+    "dataset_file": "", 
+    "cmd_key": "benchmark-vgg16-single-device-gpu", 
+    "skip_print_timers": "yes", 
+    "skip_calibration": "yes", 
+    "env": {}, 
+    "target_os_bits": "64", 
+    "data_uoa": "request-iot-benchmark", 
+    "compile_type": "dynamic", 
+    "device_id": "", 
+    "host_os": "linux-64", 
+    "target_os": "linux-64", 
+    "gpu_freq": "max"
+  }, 
+  "state": {
+    "tmp_dir": "tmp", 
+    "cur_dir": "/home/gfursin/CK/ck-request-asplos18-iot-farm/script/benchmark-request-iot-farm"
+  }, 
+  "dependencies": {
+    "python": {
+      "sort": 8, 
+      "detected_ver": "3.5.2", 
+      "bat": ". /home/gfursin/CK/local/env/505751ff49368ff5/env.sh\n", 
+      "cus": {
+        "soft_version_cmd": {
+          "win": "--version > $#filename#$ 2>&1", 
+          "linux": "--version > $#filename#$ 2>&1"
+        }, 
+        "only_for_host_os_tags": [
+          "windows", 
+          "linux"
+        ], 
+        "build_dir_name": "python", 
+        "env_prefix": "CK_ENV_COMPILER_PYTHON", 
+        "skip_path": "yes", 
+        "only_for_target_os_tags": [
+          "windows", 
+          "android", 
+          "linux"
+        ], 
+        "languages": [
+          "PYTHON"
+        ], 
+        "soft_file": {
+          "win": "python*.exe", 
+          "linux": "python*"
+        }, 
+        "version": "3.5.2", 
+        "soft_file_from_host_os": "yes", 
+        "add_only_with_version": "yes", 
+        "version_split": [
+          3, 
+          5, 
+          2
+        ], 
+        "limit_recursion_dir_search": {
+          "win": 4, 
+          "linux": 3
+        }, 
+        "check_that_exists": "yes", 
+        "ck_version": 10, 
+        "full_path": "/usr/bin/python3"
+      }, 
+      "name": "python", 
+      "tags": "compiler,lang-python,python", 
+      "build_dir_name": "python", 
+      "num_entries": 1, 
+      "for_run_time": "yes", 
+      "choices": [
+        "505751ff49368ff5"
+      ], 
+      "uoa": "505751ff49368ff5", 
+      "dict": {
+        "data_name": "python", 
+        "deps": {}, 
+        "tags": [
+          "64bits", 
+          "compiler", 
+          "host-os-linux-64", 
+          "lang-python", 
+          "python", 
+          "target-os-linux-64", 
+          "v3", 
+          "v3.5", 
+          "v3.5.2"
+        ], 
+        "customize": {
+          "soft_version_cmd": {
+            "win": "--version > $#filename#$ 2>&1", 
+            "linux": "--version > $#filename#$ 2>&1"
+          }, 
+          "only_for_host_os_tags": [
+            "windows", 
+            "linux"
+          ], 
+          "build_dir_name": "python", 
+          "env_prefix": "CK_ENV_COMPILER_PYTHON", 
+          "skip_path": "yes", 
+          "only_for_target_os_tags": [
+            "windows", 
+            "android", 
+            "linux"
+          ], 
+          "languages": [
+            "PYTHON"
+          ], 
+          "soft_file": {
+            "win": "python*.exe", 
+            "linux": "python*"
+          }, 
+          "version": "3.5.2", 
+          "soft_file_from_host_os": "yes", 
+          "add_only_with_version": "yes", 
+          "version_split": [
+            3, 
+            5, 
+            2
+          ], 
+          "limit_recursion_dir_search": {
+            "win": 4, 
+            "linux": 3
+          }, 
+          "check_that_exists": "yes", 
+          "ck_version": 10, 
+          "full_path": "/usr/bin/python3"
+        }, 
+        "setup": {
+          "version_split": [
+            3, 
+            5, 
+            2
+          ], 
+          "target_os_bits": "64", 
+          "version": "3.5.2", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "soft_uoa": "45d68512df22fde7", 
+        "env": {
+          "CK_PY_OBJ_EXT": ".pyc", 
+          "CK_ENV_COMPILER_PYTHON": "/usr", 
+          "CK_PYTHON_VER3": "YES", 
+          "CK_ENV_COMPILER_PYTHON_BIN": "/usr/bin", 
+          "CK_PYTHON_PIP_BIN_FULL": "/usr/local/bin/pip3", 
+          "CK_PY_RT": "python", 
+          "CK_ENV_COMPILER_PYTHON_FILE": "/usr/bin/python3", 
+          "CK_PYTHON_BIN": "python3", 
+          "CK_PYC": "python", 
+          "CK_PYTHON_PIP_BIN": "pip3"
+        }, 
+        "soft_alias": "compiler.python"
+      }, 
+      "ver": "3.5.2", 
+      "local": "yes"
+    }, 
+    "lib-keras": {
+      "sort": 10, 
+      "for_run_time": "yes", 
+      "bat": ". /home/gfursin/CK/local/env/47f0b91e93a001a3/env.sh\n", 
+      "cus": {
+        "used_package_uid": "7d9b2235fb4840ad", 
+        "used_package_uoa": "7d9b2235fb4840ad", 
+        "soft_file": {
+          "linux": "keras/__init__.py"
+        }, 
+        "package_extra_name": " (prebuilt, ReQuEST@ASPLOS'18 artifact)", 
+        "skip_path": "yes", 
+        "ck_version": 10, 
+        "version": "2.1.3", 
+        "env_prefix": "CK_ENV_LIB_KERAS", 
+        "extra_dir": "", 
+        "version_split": [
+          2, 
+          1, 
+          3
+        ], 
+        "limit_recursion_dir_search": {
+          "linux": 10
+        }, 
+        "install_env": {
+          "PACKAGE_VERSION": "2.1.3", 
+          "CK_HOST_CPU_NUMBER_OF_PROCESSORS": "4", 
+          "CK_TARGET_CPU_BITS": "64", 
+          "CK_TARGET_OS_ID": "linux", 
+          "CK_HOST_OS_ID": "linux"
+        }, 
+        "check_that_exists": "yes", 
+        "full_path": "/home/gfursin/CK-TOOLS/keras-prebuilt-2.1.3-linux-64/lib/keras/__init__.py"
+      }, 
+      "name": "Keras library with ReQuEst artifact deps", 
+      "tags": "lib,keras-request", 
+      "num_entries": 1, 
+      "choices": [
+        "47f0b91e93a001a3"
+      ], 
+      "uoa": "47f0b91e93a001a3", 
+      "dict": {
+        "data_name": "Keras API, TensorFlow based (prebuilt, ReQuEST@ASPLOS'18 artifact)", 
+        "deps": {
+          "python": {
+            "detected_ver": "3.5.2", 
+            "sort": 20, 
+            "bat": ". /home/gfursin/CK/local/env/505751ff49368ff5/env.sh\n", 
+            "ver": "3.5.2", 
+            "name": "Python", 
+            "tags": "compiler,python", 
+            "build_dir_name": "python", 
+            "uoa": "505751ff49368ff5", 
+            "choices": [
+              "505751ff49368ff5"
+            ], 
+            "num_entries": 1, 
+            "dict": {
+              "env_script": "env.sh", 
+              "deps": {}, 
+              "tags": [
+                "64bits", 
+                "compiler", 
+                "host-os-linux-64", 
+                "lang-python", 
+                "python", 
+                "target-os-linux-64", 
+                "v3", 
+                "v3.5", 
+                "v3.5.2"
+              ], 
+              "customize": {
+                "soft_version_cmd": {
+                  "win": "--version > $#filename#$ 2>&1", 
+                  "linux": "--version > $#filename#$ 2>&1"
+                }, 
+                "only_for_host_os_tags": [
+                  "windows", 
+                  "linux"
+                ], 
+                "build_dir_name": "python", 
+                "env_prefix": "CK_ENV_COMPILER_PYTHON", 
+                "skip_path": "yes", 
+                "only_for_target_os_tags": [
+                  "windows", 
+                  "android", 
+                  "linux"
+                ], 
+                "languages": [
+                  "PYTHON"
+                ], 
+                "soft_file": {
+                  "win": "python*.exe", 
+                  "linux": "python*"
+                }, 
+                "version": "3.5.2", 
+                "soft_file_from_host_os": "yes", 
+                "add_only_with_version": "yes", 
+                "version_split": [
+                  3, 
+                  5, 
+                  2
+                ], 
+                "limit_recursion_dir_search": {
+                  "win": 4, 
+                  "linux": 3
+                }, 
+                "check_that_exists": "yes", 
+                "ck_version": 10, 
+                "full_path": "/usr/bin/python3"
+              }, 
+              "setup": {
+                "version_split": [
+                  3, 
+                  5, 
+                  2
+                ], 
+                "target_os_bits": "64", 
+                "version": "3.5.2", 
+                "host_os_uoa": "4258b5fe54828a50", 
+                "target_os_uoa": "4258b5fe54828a50"
+              }, 
+              "data_name": "python", 
+              "soft_uoa": "45d68512df22fde7", 
+              "env": {
+                "CK_PY_OBJ_EXT": ".pyc", 
+                "CK_ENV_COMPILER_PYTHON": "/usr", 
+                "CK_PYTHON_VER3": "YES", 
+                "CK_ENV_COMPILER_PYTHON_BIN": "/usr/bin", 
+                "CK_PYTHON_PIP_BIN_FULL": "/usr/local/bin/pip3", 
+                "CK_PY_RT": "python", 
+                "CK_ENV_COMPILER_PYTHON_FILE": "/usr/bin/python3", 
+                "CK_PYTHON_BIN": "python3", 
+                "CK_PYC": "python", 
+                "CK_PYTHON_PIP_BIN": "pip3"
+              }, 
+              "soft_alias": "compiler.python"
+            }, 
+            "local": "yes"
+          }
+        }, 
+        "tags": [
+          "64bits", 
+          "channel-stable", 
+          "host-os-linux-64", 
+          "keras", 
+          "keras-request", 
+          "keras-tensorflow", 
+          "lib", 
+          "target-os-linux-64", 
+          "v2", 
+          "v2.1", 
+          "v2.1.3", 
+          "vpip", 
+          "vprebuilt"
+        ], 
+        "customize": {
+          "used_package_uid": "7d9b2235fb4840ad", 
+          "used_package_uoa": "7d9b2235fb4840ad", 
+          "soft_file": {
+            "linux": "keras/__init__.py"
+          }, 
+          "package_extra_name": " (prebuilt, ReQuEST@ASPLOS'18 artifact)", 
+          "skip_path": "yes", 
+          "ck_version": 10, 
+          "version": "2.1.3", 
+          "env_prefix": "CK_ENV_LIB_KERAS", 
+          "extra_dir": "", 
+          "version_split": [
+            2, 
+            1, 
+            3
+          ], 
+          "limit_recursion_dir_search": {
+            "linux": 10
+          }, 
+          "install_env": {
+            "PACKAGE_VERSION": "2.1.3", 
+            "CK_HOST_CPU_NUMBER_OF_PROCESSORS": "4", 
+            "CK_TARGET_CPU_BITS": "64", 
+            "CK_TARGET_OS_ID": "linux", 
+            "CK_HOST_OS_ID": "linux"
+          }, 
+          "check_that_exists": "yes", 
+          "full_path": "/home/gfursin/CK-TOOLS/keras-prebuilt-2.1.3-linux-64/lib/keras/__init__.py"
+        }, 
+        "setup": {
+          "version": "2.1.3", 
+          "deps_python": "505751ff49368ff5", 
+          "version_split": [
+            2, 
+            1, 
+            3
+          ], 
+          "target_os_bits": "64", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "package_uoa": "7d9b2235fb4840ad", 
+        "soft_uoa": "04698bcbc46c246f", 
+        "env": {
+          "PYTHONPATH": "/home/gfursin/CK-TOOLS/keras-prebuilt-2.1.3-linux-64/lib:${PYTHONPATH}", 
+          "CK_ENV_LIB_KERAS": "/home/gfursin/CK-TOOLS/keras-prebuilt-2.1.3-linux-64/lib"
+        }, 
+        "soft_alias": "lib.keras"
+      }, 
+      "ver": "2.1.3", 
+      "package_uoa": "7d9b2235fb4840ad", 
+      "local": "yes"
+    }, 
+    "lib-tensorflow": {
+      "sort": 20, 
+      "for_run_time": "yes", 
+      "bat": ". /home/gfursin/CK/local/env/28235d90468ab57c/env.sh\n", 
+      "cus": {
+        "git_src_dir": "src", 
+        "used_package_uid": "7815f86e8ab7a368", 
+        "used_package_uoa": "lib-tensorflow-1.5.0-src-cuda", 
+        "install_env": {
+          "CK_HOST_CPU_NUMBER_OF_PROCESSORS": "1", 
+          "CK_HOST_OS_ID": "linux", 
+          "CK_TARGET_CPU_BITS": "64", 
+          "CK_TF_NEED_CUDA": "YES", 
+          "CK_TARGET_OS_ID": "linux", 
+          "PACKAGE_SUB_DIR": "src", 
+          "PACKAGE_VERSION": "1.5", 
+          "PACKAGE_GIT_CHECKOUT": "v1.5.0", 
+          "CK_TF_ENABLE_XLA": "NO", 
+          "PACKAGE_URL": "https://github.com/tensorflow/tensorflow", 
+          "PACKAGE_GIT": "YES"
+        }, 
+        "soft_file": {
+          "win": "tensorflow/__init__.py", 
+          "linux": "tensorflow/__init__.py"
+        }, 
+        "package_extra_name": " (from sources, cuda)", 
+        "skip_path": "yes", 
+        "version": "1.5", 
+        "env_prefix": "CK_ENV_LIB_TF", 
+        "extra_dir": "", 
+        "version_split": [
+          1, 
+          5
+        ], 
+        "limit_recursion_dir_search": {
+          "linux": 5
+        }, 
+        "check_that_exists": "yes", 
+        "ck_version": 10, 
+        "full_path": "/home/lg4/CK-TOOLS/lib-tensorflow-src-cuda-1.5-linux-64/lib/tensorflow/__init__.py"
+      }, 
+      "name": "TensorFlow library", 
+      "tags": "lib,tensorflow", 
+      "num_entries": 1, 
+      "choices": [
+        "28235d90468ab57c"
+      ], 
+      "uoa": "28235d90468ab57c", 
+      "dict": {
+        "data_name": "TensorFlow library (from sources, cuda)", 
+        "deps": {}, 
+        "tags": [
+          "64bits", 
+          "bazel", 
+          "channel-stable", 
+          "host-os-linux-64", 
+          "lib", 
+          "target-os-linux-64", 
+          "tensorflow", 
+          "tensorflow-cuda", 
+          "v1", 
+          "v1.5", 
+          "v1.5.0", 
+          "vcuda", 
+          "vsrc"
+        ], 
+        "customize": {
+          "git_src_dir": "src", 
+          "used_package_uid": "7815f86e8ab7a368", 
+          "used_package_uoa": "lib-tensorflow-1.5.0-src-cuda", 
+          "install_env": {
+            "CK_HOST_CPU_NUMBER_OF_PROCESSORS": "1", 
+            "CK_HOST_OS_ID": "linux", 
+            "CK_TARGET_CPU_BITS": "64", 
+            "CK_TF_NEED_CUDA": "YES", 
+            "CK_TARGET_OS_ID": "linux", 
+            "PACKAGE_SUB_DIR": "src", 
+            "PACKAGE_VERSION": "1.5", 
+            "PACKAGE_GIT_CHECKOUT": "v1.5.0", 
+            "CK_TF_ENABLE_XLA": "NO", 
+            "PACKAGE_URL": "https://github.com/tensorflow/tensorflow", 
+            "PACKAGE_GIT": "YES"
+          }, 
+          "soft_file": {
+            "win": "tensorflow/__init__.py", 
+            "linux": "tensorflow/__init__.py"
+          }, 
+          "package_extra_name": " (from sources, cuda)", 
+          "skip_path": "yes", 
+          "version": "1.5", 
+          "env_prefix": "CK_ENV_LIB_TF", 
+          "extra_dir": "", 
+          "version_split": [
+            1, 
+            5
+          ], 
+          "limit_recursion_dir_search": {
+            "linux": 5
+          }, 
+          "check_that_exists": "yes", 
+          "ck_version": 10, 
+          "full_path": "/home/lg4/CK-TOOLS/lib-tensorflow-src-cuda-1.5-linux-64/lib/tensorflow/__init__.py"
+        }, 
+        "setup": {
+          "version_split": [
+            1, 
+            5
+          ], 
+          "target_os_bits": "64", 
+          "version": "1.5", 
+          "host_os_uoa": "4258b5fe54828a50", 
+          "target_os_uoa": "4258b5fe54828a50"
+        }, 
+        "env_script": "env.sh", 
+        "package_uoa": "7815f86e8ab7a368", 
+        "soft_uoa": "30db354f469bb178", 
+        "env": {
+          "CK_ENV_LIB_TF": "/home/lg4/CK-TOOLS/lib-tensorflow-src-cuda-1.5-linux-64", 
+          "CK_ENV_LIB_TF_LIB": "/home/lg4/CK-TOOLS/lib-tensorflow-src-cuda-1.5-linux-64/lib"
+        }, 
+        "soft_alias": "lib.tensorflow"
+      }, 
+      "ver": "1.5", 
+      "package_uoa": "7815f86e8ab7a368", 
+      "local": "yes"
+    }
+  }, 
+  "no_compiler_description": "yes", 
+  "choices_desc": {}, 
+  "speed": "no"
+}

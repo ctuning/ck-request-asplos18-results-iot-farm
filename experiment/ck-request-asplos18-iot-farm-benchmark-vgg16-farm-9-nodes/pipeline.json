@@ -1,0 +1,497 @@
+{
+  "cmd_key": "benchmark-vgg16-farm-9-nodes", 
+  "tmp_dir": "", 
+  "features": {
+    "compiler_version": {
+      "raw": "", 
+      "list": [], 
+      "str": ""
+    }
+  }, 
+  "characteristics": {}, 
+  "choices": {
+    "cpu_freq": "max", 
+    "no_state_check": "yes", 
+    "target": "farm-9", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "energy": "no", 
+    "device_cfg": {
+      "update_target_os_dict": {
+        "preset_host_env": {}, 
+        "skip_platform_detection": "yes"
+      }, 
+      "path_to_ck_target_entry": "/Users/jiashenc/CK/local/machine/farm-9", 
+      "remote_params": {
+        "avro_config": {
+          "node": {
+            "fc1": [
+              "192.168.1.8", 
+              "192.168.1.10"
+            ], 
+            "fc2": [
+              "192.168.1.11"
+            ], 
+            "block1": [
+              "192.168.1.3"
+            ], 
+            "initial": [
+              "192.168.1.2"
+            ], 
+            "block5": [
+              "192.168.1.7"
+            ], 
+            "block234": [
+              "192.168.1.4", 
+              "192.168.1.5", 
+              "192.168.1.6"
+            ]
+          }
+        }
+      }, 
+      "access_type": "avro"
+    }, 
+    "flags": "-O3", 
+    "dataset_file": "", 
+    "cmd_key": "benchmark-vgg16-farm-9-nodes", 
+    "skip_print_timers": "yes", 
+    "skip_calibration": "yes", 
+    "env": {
+      "CK_TARGET_PATH": "/Users/jiashenc/CK/local/machine/farm-9"
+    }, 
+    "target_os_bits": "64", 
+    "data_uoa": "request-iot-benchmark", 
+    "compile_type": "dynamic", 
+    "device_id": "", 
+    "host_os": "macos-64", 
+    "target_os": "macos-64", 
+    "gpu_freq": "max"
+  }, 
+  "state": {
+    "tmp_dir": "tmp", 
+    "cur_dir": "/Users/jiashenc/CK/ck-request-asplos18-iot-farm/script/benchmark-request-iot-farm"
+  }, 
+  "dependencies": {
+    "python": {
+      "sort": 8, 
+      "detected_ver": "2.7.10", 
+      "bat": ". /Users/jiashenc/CK/local/env/4841df8bb16b60fa/env.sh\n", 
+      "cus": {
+        "soft_version_cmd": {
+          "win": "--version > $#filename#$ 2>&1", 
+          "linux": "--version > $#filename#$ 2>&1"
+        }, 
+        "only_for_host_os_tags": [
+          "windows", 
+          "linux"
+        ], 
+        "build_dir_name": "python", 
+        "env_prefix": "CK_ENV_COMPILER_PYTHON", 
+        "skip_path": "yes", 
+        "only_for_target_os_tags": [
+          "windows", 
+          "android", 
+          "linux"
+        ], 
+        "languages": [
+          "PYTHON"
+        ], 
+        "soft_file": {
+          "win": "python*.exe", 
+          "linux": "python*"
+        }, 
+        "version": "2.7.10", 
+        "soft_file_from_host_os": "yes", 
+        "add_only_with_version": "yes", 
+        "version_split": [
+          2, 
+          7, 
+          10
+        ], 
+        "limit_recursion_dir_search": {
+          "win": 4, 
+          "linux": 3
+        }, 
+        "check_that_exists": "yes", 
+        "ck_version": 10, 
+        "full_path": "/Users/jiashenc/Env/asplos/bin/python2"
+      }, 
+      "name": "python", 
+      "tags": "compiler,lang-python,python", 
+      "build_dir_name": "python", 
+      "num_entries": 1, 
+      "for_run_time": "yes", 
+      "choices": [
+        "4841df8bb16b60fa"
+      ], 
+      "uoa": "4841df8bb16b60fa", 
+      "dict": {
+        "data_name": "python", 
+        "deps": {}, 
+        "tags": [
+          "64bits", 
+          "compiler", 
+          "host-os-macos-64", 
+          "lang-python", 
+          "python", 
+          "target-os-macos-64", 
+          "v2", 
+          "v2.7", 
+          "v2.7.10"
+        ], 
+        "customize": {
+          "soft_version_cmd": {
+            "win": "--version > $#filename#$ 2>&1", 
+            "linux": "--version > $#filename#$ 2>&1"
+          }, 
+          "only_for_host_os_tags": [
+            "windows", 
+            "linux"
+          ], 
+          "build_dir_name": "python", 
+          "env_prefix": "CK_ENV_COMPILER_PYTHON", 
+          "skip_path": "yes", 
+          "only_for_target_os_tags": [
+            "windows", 
+            "android", 
+            "linux"
+          ], 
+          "languages": [
+            "PYTHON"
+          ], 
+          "soft_file": {
+            "win": "python*.exe", 
+            "linux": "python*"
+          }, 
+          "version": "2.7.10", 
+          "soft_file_from_host_os": "yes", 
+          "add_only_with_version": "yes", 
+          "version_split": [
+            2, 
+            7, 
+            10
+          ], 
+          "limit_recursion_dir_search": {
+            "win": 4, 
+            "linux": 3
+          }, 
+          "check_that_exists": "yes", 
+          "ck_version": 10, 
+          "full_path": "/Users/jiashenc/Env/asplos/bin/python2"
+        }, 
+        "setup": {
+          "version_split": [
+            2, 
+            7, 
+            10
+          ], 
+          "target_os_bits": "64", 
+          "version": "2.7.10", 
+          "host_os_uoa": "fb7d7f63b44b9ea3", 
+          "target_os_uoa": "fb7d7f63b44b9ea3"
+        }, 
+        "env_script": "env.sh", 
+        "soft_uoa": "45d68512df22fde7", 
+        "env": {
+          "CK_ENV_COMPILER_PYTHON_FILE": "/Users/jiashenc/Env/asplos/bin/python2", 
+          "CK_ENV_COMPILER_PYTHON": "/Users/jiashenc/Env/asplos", 
+          "CK_PYTHON_VER2": "YES", 
+          "CK_PYTHON_PIP_BIN_FULL": "/Users/jiashenc/Env/asplos/bin/pip2", 
+          "CK_PY_RT": "python", 
+          "CK_PY_OBJ_EXT": ".pyc", 
+          "CK_ENV_COMPILER_PYTHON_BIN": "/Users/jiashenc/Env/asplos/bin", 
+          "CK_PYTHON_BIN": "python2", 
+          "CK_PYC": "python", 
+          "CK_PYTHON_PIP_BIN": "pip2"
+        }, 
+        "soft_alias": "compiler.python"
+      }, 
+      "ver": "2.7.10", 
+      "local": "yes"
+    }, 
+    "lib-keras": {
+      "sort": 10, 
+      "for_run_time": "yes", 
+      "bat": ". /Users/jiashenc/CK/local/env/061f6a4ca698c42e/env.sh\n", 
+      "cus": {
+        "used_package_uid": "7d9b2235fb4840ad", 
+        "used_package_uoa": "7d9b2235fb4840ad", 
+        "soft_file": {
+          "linux": "keras/__init__.py"
+        }, 
+        "package_extra_name": " (prebuilt, ReQuEST@ASPLOS'18 artifact)", 
+        "skip_path": "yes", 
+        "ck_version": 10, 
+        "version": "2.1.3", 
+        "env_prefix": "CK_ENV_LIB_KERAS", 
+        "extra_dir": "", 
+        "version_split": [
+          2, 
+          1, 
+          3
+        ], 
+        "limit_recursion_dir_search": {
+          "linux": 10
+        }, 
+        "install_env": {
+          "CK_MD5SUM_CMD": "md5 -r", 
+          "CK_HOST_OS_ID": "linux", 
+          "CK_TARGET_CPU_BITS": "64", 
+          "CK_TARGET_OS_ID": "linux", 
+          "CK_HOST_CPU_NUMBER_OF_PROCESSORS": "8", 
+          "PACKAGE_VERSION": "2.1.3"
+        }, 
+        "check_that_exists": "yes", 
+        "full_path": "/Users/jiashenc/CK-TOOLS/keras-prebuilt-2.1.3-compiler.python-2.7.10-macos-64/lib/keras/__init__.py"
+      }, 
+      "name": "Keras library with ReQuEst artifact deps", 
+      "tags": "lib,keras-request", 
+      "num_entries": 1, 
+      "choices": [
+        "061f6a4ca698c42e"
+      ], 
+      "uoa": "061f6a4ca698c42e", 
+      "dict": {
+        "data_name": "Keras API, TensorFlow based (prebuilt, ReQuEST@ASPLOS'18 artifact)", 
+        "deps": {
+          "python": {
+            "detected_ver": "2.7.10", 
+            "sort": 20, 
+            "bat": ". /Users/jiashenc/CK/local/env/4841df8bb16b60fa/env.sh\n", 
+            "ver": "2.7.10", 
+            "name": "Python", 
+            "tags": "compiler,python", 
+            "build_dir_name": "python", 
+            "uoa": "4841df8bb16b60fa", 
+            "choices": [
+              "4841df8bb16b60fa"
+            ], 
+            "num_entries": 1, 
+            "add_to_path": "yes", 
+            "dict": {
+              "env_script": "env.sh", 
+              "deps": {}, 
+              "tags": [
+                "64bits", 
+                "compiler", 
+                "host-os-macos-64", 
+                "lang-python", 
+                "python", 
+                "target-os-macos-64", 
+                "v2", 
+                "v2.7", 
+                "v2.7.10"
+              ], 
+              "customize": {
+                "soft_version_cmd": {
+                  "win": "--version > $#filename#$ 2>&1", 
+                  "linux": "--version > $#filename#$ 2>&1"
+                }, 
+                "only_for_host_os_tags": [
+                  "windows", 
+                  "linux"
+                ], 
+                "build_dir_name": "python", 
+                "env_prefix": "CK_ENV_COMPILER_PYTHON", 
+                "skip_path": "yes", 
+                "only_for_target_os_tags": [
+                  "windows", 
+                  "android", 
+                  "linux"
+                ], 
+                "languages": [
+                  "PYTHON"
+                ], 
+                "soft_file": {
+                  "win": "python*.exe", 
+                  "linux": "python*"
+                }, 
+                "version": "2.7.10", 
+                "soft_file_from_host_os": "yes", 
+                "add_only_with_version": "yes", 
+                "version_split": [
+                  2, 
+                  7, 
+                  10
+                ], 
+                "limit_recursion_dir_search": {
+                  "win": 4, 
+                  "linux": 3
+                }, 
+                "check_that_exists": "yes", 
+                "ck_version": 10, 
+                "full_path": "/Users/jiashenc/Env/asplos/bin/python2"
+              }, 
+              "setup": {
+                "version_split": [
+                  2, 
+                  7, 
+                  10
+                ], 
+                "target_os_bits": "64", 
+                "version": "2.7.10", 
+                "host_os_uoa": "fb7d7f63b44b9ea3", 
+                "target_os_uoa": "fb7d7f63b44b9ea3"
+              }, 
+              "data_name": "python", 
+              "soft_uoa": "45d68512df22fde7", 
+              "env": {
+                "CK_ENV_COMPILER_PYTHON_FILE": "/Users/jiashenc/Env/asplos/bin/python2", 
+                "CK_ENV_COMPILER_PYTHON": "/Users/jiashenc/Env/asplos", 
+                "CK_PYTHON_VER2": "YES", 
+                "CK_PYTHON_PIP_BIN_FULL": "/Users/jiashenc/Env/asplos/bin/pip2", 
+                "CK_PY_RT": "python", 
+                "CK_PY_OBJ_EXT": ".pyc", 
+                "CK_ENV_COMPILER_PYTHON_BIN": "/Users/jiashenc/Env/asplos/bin", 
+                "CK_PYTHON_BIN": "python2", 
+                "CK_PYC": "python", 
+                "CK_PYTHON_PIP_BIN": "pip2"
+              }, 
+              "soft_alias": "compiler.python"
+            }, 
+            "local": "yes"
+          }
+        }, 
+        "tags": [
+          "64bits", 
+          "channel-stable", 
+          "host-os-macos-64", 
+          "keras", 
+          "keras-request", 
+          "keras-tensorflow", 
+          "lib", 
+          "needs-python", 
+          "needs-python-2.7.10", 
+          "target-os-macos-64", 
+          "v2", 
+          "v2.1", 
+          "v2.1.3", 
+          "vpip", 
+          "vprebuilt"
+        ], 
+        "customize": {
+          "used_package_uid": "7d9b2235fb4840ad", 
+          "used_package_uoa": "7d9b2235fb4840ad", 
+          "soft_file": {
+            "linux": "keras/__init__.py"
+          }, 
+          "package_extra_name": " (prebuilt, ReQuEST@ASPLOS'18 artifact)", 
+          "skip_path": "yes", 
+          "ck_version": 10, 
+          "version": "2.1.3", 
+          "env_prefix": "CK_ENV_LIB_KERAS", 
+          "extra_dir": "", 
+          "version_split": [
+            2, 
+            1, 
+            3
+          ], 
+          "limit_recursion_dir_search": {
+            "linux": 10
+          }, 
+          "install_env": {
+            "CK_MD5SUM_CMD": "md5 -r", 
+            "CK_HOST_OS_ID": "linux", 
+            "CK_TARGET_CPU_BITS": "64", 
+            "CK_TARGET_OS_ID": "linux", 
+            "CK_HOST_CPU_NUMBER_OF_PROCESSORS": "8", 
+            "PACKAGE_VERSION": "2.1.3"
+          }, 
+          "check_that_exists": "yes", 
+          "full_path": "/Users/jiashenc/CK-TOOLS/keras-prebuilt-2.1.3-compiler.python-2.7.10-macos-64/lib/keras/__init__.py"
+        }, 
+        "setup": {
+          "version": "2.1.3", 
+          "deps_python": "4841df8bb16b60fa", 
+          "version_split": [
+            2, 
+            1, 
+            3
+          ], 
+          "target_os_bits": "64", 
+          "host_os_uoa": "fb7d7f63b44b9ea3", 
+          "target_os_uoa": "fb7d7f63b44b9ea3"
+        }, 
+        "env_script": "env.sh", 
+        "package_uoa": "7d9b2235fb4840ad", 
+        "soft_uoa": "04698bcbc46c246f", 
+        "env": {
+          "PYTHONPATH": "/Users/jiashenc/CK-TOOLS/keras-prebuilt-2.1.3-compiler.python-2.7.10-macos-64/lib:${PYTHONPATH}", 
+          "CK_ENV_LIB_KERAS": "/Users/jiashenc/CK-TOOLS/keras-prebuilt-2.1.3-compiler.python-2.7.10-macos-64/lib"
+        }, 
+        "soft_alias": "lib.keras"
+      }, 
+      "ver": "2.1.3", 
+      "package_uoa": "7d9b2235fb4840ad", 
+      "local": "yes"
+    }, 
+    "lib-tensorflow": {
+      "sort": 20, 
+      "for_run_time": "yes", 
+      "bat": ". /Users/jiashenc/CK/local/env/2e8eed69416eaa4d/env.sh\n", 
+      "cus": {
+        "soft_file": {
+          "win": "tensorflow/__init__.py", 
+          "linux": "tensorflow/__init__.py"
+        }, 
+        "skip_path": "yes", 
+        "env_prefix": "CK_ENV_LIB_TF", 
+        "limit_recursion_dir_search": {
+          "linux": 5
+        }, 
+        "check_that_exists": "yes", 
+        "ck_version": 10, 
+        "full_path": "/Users/jiashenc/Env/asplos/lib/python2.7/site-packages/tensorflow/__init__.py"
+      }, 
+      "name": "TensorFlow library", 
+      "tags": "lib,tensorflow", 
+      "num_entries": 1, 
+      "choices": [
+        "2e8eed69416eaa4d"
+      ], 
+      "uoa": "2e8eed69416eaa4d", 
+      "dict": {
+        "data_name": "TensorFlow library", 
+        "deps": {}, 
+        "tags": [
+          "64bits", 
+          "host-os-macos-64", 
+          "lib", 
+          "target-os-macos-64", 
+          "tensorflow"
+        ], 
+        "customize": {
+          "soft_file": {
+            "win": "tensorflow/__init__.py", 
+            "linux": "tensorflow/__init__.py"
+          }, 
+          "skip_path": "yes", 
+          "env_prefix": "CK_ENV_LIB_TF", 
+          "limit_recursion_dir_search": {
+            "linux": 5
+          }, 
+          "check_that_exists": "yes", 
+          "ck_version": 10, 
+          "full_path": "/Users/jiashenc/Env/asplos/lib/python2.7/site-packages/tensorflow/__init__.py"
+        }, 
+        "setup": {
+          "version_split": [], 
+          "target_os_bits": "64", 
+          "version": "", 
+          "host_os_uoa": "fb7d7f63b44b9ea3", 
+          "target_os_uoa": "fb7d7f63b44b9ea3"
+        }, 
+        "env_script": "env.sh", 
+        "soft_uoa": "30db354f469bb178", 
+        "env": {
+          "CK_ENV_LIB_TF": "/Users/jiashenc/Env/asplos/lib/python2.7", 
+          "CK_ENV_LIB_TF_LIB": "/Users/jiashenc/Env/asplos/lib/python2.7/site-packages"
+        }, 
+        "soft_alias": "lib.tensorflow"
+      }, 
+      "local": "yes"
+    }
+  }, 
+  "no_compiler_description": "yes", 
+  "choices_desc": {}, 
+  "speed": "no"
+}
